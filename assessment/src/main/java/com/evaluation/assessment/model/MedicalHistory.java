@@ -52,6 +52,19 @@ public class MedicalHistory
 	public void setCurrentMedication(String currentMedication) {
 		this.currentMedication = currentMedication;
 	}
+
+	public MedicalHistory(int id, String illness, int numOfYears, String currentMedication) {
+		super();
+		this.id = id;
+		this.illness = illness;
+		this.numOfYears = numOfYears;
+		this.currentMedication = currentMedication;
+	}
+
+	public MedicalHistory() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 
 }

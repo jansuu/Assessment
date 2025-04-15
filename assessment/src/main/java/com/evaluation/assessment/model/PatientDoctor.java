@@ -42,6 +42,18 @@ public class PatientDoctor
 	public void setDoctor(Doctor doctor) {
 		this.doctor = doctor;
 	}
+
+	public PatientDoctor() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public PatientDoctor(int id, Patient patient, Doctor doctor) {
+		super();
+		this.id = id;
+		this.patient = patient;
+		this.doctor = doctor;
+	}
 	
 	
 

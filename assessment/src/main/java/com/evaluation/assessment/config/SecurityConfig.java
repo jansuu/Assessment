@@ -34,8 +34,7 @@ public class SecurityConfig
  		.csrf(csrf->csrf.disable())
  			.authorizeHttpRequests((authorize) -> authorize
  				.requestMatchers("/api/User/token/generate").permitAll()
- 				.requestMatchers("/api/user/signup").permitAll()
- 				.requestMatchers("/api/auth/login").authenticated()
+ 				.requestMatchers("/api/User/signup").permitAll()
  				.requestMatchers("/api/patient/doctor/add/{patientName}/{doctorID}").permitAll()
  				.requestMatchers("/api/patient/doctor/get/{doctorID}").hasAuthority("DOCTOR")
  				.requestMatchers("/api/patient/post/{userName}/{medicalHistoryID}").hasAuthority("PATIENT")

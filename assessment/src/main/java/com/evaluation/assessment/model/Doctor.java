@@ -59,6 +59,19 @@ public class Doctor
 	public void setUser(User user) {
 		this.user = user;
 	}
+
+	public Doctor() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Doctor(int id, String name, Speciality speciality, User user) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.speciality = speciality;
+		this.user = user;
+	}
 	
 	
 

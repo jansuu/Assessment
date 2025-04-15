@@ -26,6 +26,7 @@ public class Patient
 	@OneToOne
 	private User user;
 
+
 	public int getId() {
 		return id;
 	}
@@ -65,5 +66,21 @@ public class Patient
 	public void setUser(User user) {
 		this.user = user;
 	}
+
+	public Patient() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Patient(int id, String name, int age, MedicalHistory medicalHistory, User user) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.medicalHistory = medicalHistory;
+		this.user = user;
+	}
+	
+	
 	
 }
